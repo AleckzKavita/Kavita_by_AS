@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Baby";
+    src: url("../fonts/OoohBaby-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "PoppinsMed";
+    src: url("../fonts/Poppins-Medium.woff2") format("woff2");
+    
+}
+
+@font-face {
+    font-family: "PoppinsSemiBold";
+    src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+}
+
+
+
+
+
+:root {
+    /* Colors */
+    --cl__primary: #28bce5 ;
+    --cl__primary--100: #003d7a;
+    --cl__accent: #E2388A;
+    --cl__neutral: #20183d;
+    --cl__neutral--100: #ffffff;
+    --cl__neutral--200: #000000;
+
+    /* Fonts */
+    --font__basic: "PoppinsReg", "system-ui", sans-serif;
+    --font__med: "PoppinsMed", "system-ui", sans-serif;
+    --font__semi: "PoppinsSemiBold", "system-ui", sans-serif;
+    --font__accent: "Comfortaa", "system-ui", sans-serif;
+    --font__accent--100: "baby", "system-ui", sans-serif;
+
+
+    /* animation to keywords */
+    interpolate-size: allow-keywords;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font__basic);
+    font-size:  0.825rem;
+    line-height: 1.5;
+    font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+    {
+    
+    font-family: var(--font__accent);
+    color: var(--cl__primary);
+}
+
+span {
+    font-family: var(--font__med);
+    color: var(--cl__primary);
+}
+
+
+.wrapper {
+    max-inline-size: var(--maxWidth); 
+    max-width: var(--maxWidth);
+    margin-inline: auto; 
+    padding-inline: 1rem;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: flex;
+    inline-size: fit-content;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+    background-color: var(--cl__accent);
+    color: var(--cl__neutral--200);
+    font-family: var(--font__semi);
+
+    padding: 0.5rem 1.5rem;
+    margin: 1rem 0 2rem 0;
+    margin-top: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.fc__primary {
+    color: var(--cl__primary);
+}
+
+.fc__accent {
+    color: var(--cl__accent);
+}
+
+.fc__neutral {
+    color: var(--cl__neutral);
+}
+
+.fc__neutral--100 {
+    color: var(--cl__neutral--100);
+}
+
+.fc__neutral--200 {
+    color: var(--cl__neutral--200);
+}
+
+
+/* TypeScale 1.2 */
+
+
+.fs__xxxl {
+    font-size: 2.125rem;
+    line-height: 1.1;
+}
+
+.fs__xxl {
+    font-size: 1.813rem;
+    line-height: 1.2;
+}
+
+.fs__xl {
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.fs__l {
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
+
+.fs__m {
+    font-size: 0.875rem ;
+    line-height: 1.5;
+}
+
+.fs__s {
+    font-size: 0.625rem;
+}
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bg__neutral {
+    background-color: var(--cl__neutral);
+}
+
+
+@media screen and (width > 48rem) {
+     
+body {
+    font-size: 1rem;
+}
+
+    .fs__xxxl {
+        font-size: 5.61rem;
+    }
+    .fs__xxl {
+        font-size: 4.209rem;
+    }
+    .fs__xl {
+        font-size: 3.157rem;
+    }
+    .fs__l {
+        font-size: 2.369rem;
+    }
+    .fs__m {
+        font-size: 1.777rem;
+    }
+    .fs__s {
+        font-size: 0.75rem;
+    }
+}

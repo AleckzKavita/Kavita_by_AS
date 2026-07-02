@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" width="155.95" height="147.29" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 155.95 147.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_65);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_65-2);
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_92);
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_65" data-name="Unbenannter Verlauf 65" x1="137.55" y1="147.06" x2="79.31" y2="93.72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e13788"/>
+      <stop offset=".25" stop-color="#b93079"/>
+      <stop offset=".5" stop-color="#8f2868"/>
+      <stop offset=".74" stop-color="#78235f"/>
+      <stop offset=".8" stop-color="#6b2255"/>
+      <stop offset=".89" stop-color="#4a203d"/>
+      <stop offset="1" stop-color="#1d1e1c"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_92" data-name="Unbenannter Verlauf 92" x1="114.89" y1="8.71" x2="27.72" y2="146.51" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e13788"/>
+      <stop offset=".26" stop-color="#b93079"/>
+      <stop offset=".5" stop-color="#8f2868"/>
+      <stop offset=".74" stop-color="#78235f"/>
+      <stop offset="1" stop-color="#1d1e1c"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_65-2" data-name="Unbenannter Verlauf 65" x1="-.01" y1="-.41" x2="48.52" y2="112.69" xlink:href="#Unbenannter_Verlauf_65"/>
+  </defs>
+  <path class="cls-1" d="M155.95,146.25l-65.32-66.41-17.52,30.21,21.2,21.51s17.51,20.5,61.64,14.69Z"/>
+  <path class="cls-3" d="M128.47,16.62s-34.68,59.96-55.37,95.57c-6.21,10.69-17.28,33.25-34.37,34.81-4.98.46-9.89-1.14-13.72-4.34-3.59-3.01-7.63-8.05-9-16.05,1.96,1.28,5.17,4.42,8.49.41,1.87-2.81,58.08-98.28,58.08-98.28,0,0,7.75-16.27,45.88-12.12Z"/>
+  <path class="cls-2" d="M0,.46s15.42,1.62,15.42,20.7c0,2.73.6,105.45.6,105.45,0,0,5.49,4.74,8.49,1.48,1.99-2.78,24.56-42,24.56-42V30.96S51.8-4.4,0,.46Z"/>
+</svg>
