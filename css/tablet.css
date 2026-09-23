@@ -1,0 +1,106 @@
+@media screen and (width > 40rem) {
+
+    .wrapper__uebermich {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .uebermich__headline {
+        grid-column: 1 / -1;
+    }
+
+    .uebermich__content--text:first-child {
+        margin-top: 0;
+    }
+
+    .wrapper__skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .skills__headline {
+        grid-column: 1 / -1;
+    }
+
+    .hard__skills,
+    .soft__skills {
+        height: 100%;
+    }
+
+    .hard__skills--content,
+    .soft__skills {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .hard__skills--list,
+    .soft__skills--list {
+        display: flex;
+        flex: 1;
+    }
+
+    .hard__skills--item,
+    .soft__skills--item {
+        display: flex;
+        align-items: center;
+
+        flex: 1;
+
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .skills__button {
+    margin: 1rem;
+    }
+
+    .portfolio__work__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .websites__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .content__print {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .contact__form--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+
+    .contact__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .footer__content {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .footer__content--social {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .footer__content--privacy {
+        display: flex;
+        gap: 2rem;
+    }
+
+}

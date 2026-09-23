@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/svg" href="/favicon/favicon.svg">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/laptop.css">
+    <link rel="icon" type="image/svg" href="../favicon/favicon.svg">
     <script src="../javascript/script.js" defer></script>
     <title>Kavita</title>
 </head>
 
 <body>
-
-    <img class="hero__image" src="../images/titelbild.webp" alt="Arbeitsplatz mit Laptop und Notizbuch">
-
     <div class="head__background bg__neutral--200">
-        <img class="logo" src="../logo/Logo_gold.svg" alt="Kavita Logo">
+        <a href="index.html">
+            <img class="logo" src="../logo/Logo_gold.svg" alt="Kavita Logo">
+        </a>
         <button id="navbar__toggle" class="burger__button" popovertarget="navbar">
             <img class="burger__icon" src="/icons/burger__icon.svg" alt="menu open">
         </button>
     </div>
+
+<img class="hero__image" src="../images/titelbild.webp" alt="Arbeitsplatz mit Laptop und Notizbuch">
 
     <header class="header">
 
@@ -29,36 +32,37 @@
                 <img class="close__icon" src="/icons/close__icon.svg" alt="menu close">
             </button>
             <ul class="navbar__list">
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="uebermich.html">Über mich</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="index.html#home">Startseite</a></li>
+                <li><a href="uebermich.html#uebermich">Über mich</a></li>
+                <li><a class="current" href="portfolio.html#portfolio">Portfolio</a></li>
+                <li><a href="kontakt.html#contact">Kontakt</a></li>
             </ul>
         </nav>
 
     </header>
+
     <main>
-        <section class="portfolio bg__neutral--200">
+        <section id="portfolio" class="portfolio bg__neutral--100">
             <div class="wrapper__portfolio">
                 <h1 class="portfolio__headline fs__xxxl fc__primary padding">Portfolio</h1>
                 <div class="portfolio__content margin ">
-                    <h2 class="portfolio__content--headline  fc__neutral--100 ft__med">Hinweis zu den gezeigten Arbeiten
+                    <h2 class="portfolio__content--headline  fc__neutral--200 ft__med">Hinweis zu den gezeigten Arbeiten
                     </h2>
                     <div>
-                        <p class="portfolio__content--text fc__neutral--100">
+                        <p class="portfolio__content--text fc__neutral--200">
                             Die in diesem Portfolio präsentierten Arbeiten sind im Rahmen meiner schulischen Umschulung
                             sowie durch eigenständige Projekte entstanden. Ein Teil der Projekte wurde im Unterricht, in
                             Klausuren oder Prüfungen erstellt und spiegelt meinen jeweiligen Lernstand zum Zeitpunkt der
                             Bearbeitung wider.
                         </p>
-                        <p class="portfolio__content--text fc__neutral--100">
+                        <p class="portfolio__content--text fc__neutral--200">
                             Da einige Arbeiten auf den im Unterricht vermittelten Kenntnissen basieren, entsprechen sie
                             nicht in allen Bereichen dem heutigen Stand moderner Webentwicklung. So sind beispielsweise
                             einige Webseiten nicht vollständig für alle Endgeräte oder Bildschirmgrößen optimiert.
                             Dennoch zeigen die Projekte meine gestalterischen Fähigkeiten, meine technische Entwicklung
                             und meinen Umgang mit unterschiedlichen Aufgabenstellungen.
                         </p>
-                        <p class="portfolio__content--text fc__neutral--100">
+                        <p class="portfolio__content--text fc__neutral--200">
                             Dieses Portfolio dokumentiert meinen bisherigen Werdegang und verdeutlicht sowohl meine
                             Kenntnisse als auch meine kontinuierliche Weiterentwicklung im Bereich Mediengestaltung und
                             Webdesign.
@@ -68,41 +72,76 @@
             </div>
         </section>
         <section class="portfolio__work">
-            <div class="wrapper__portfolio--work">
+            <div class="wrapper__portfolio--work bg__neutral--200">
                 <h2 class="portfolio__work--headline fs__xxl fc__neutral--200 bg__primary padding">Meine Arbeiten</h2>
-                </h2>
                 <div class="portfolio__work--content margin">
                     <div class="portfolio__content--websites">
-                        <h3 class="portfolio__content--headline fs__l fc__neutral--200 ft__semibold">Webseiten</h3>
-                        <div class="gap">
-                        <div class="portfolio__content--turte">
-                            <a href="../websites/turtle_diving_resort/html/index.html" target="_blank">
-                                <img class="image__turte" src="../images/mockup_turtle.webp"
-                                    alt="Vorschau der Turtle Diving Resort Webseite">
-                            </a>
+                        <h3 class="websites__content--headline fs__l fc__primary ft__semibold">Webseiten</h3>
+                        <div class="websites__content">
+                            <div class="portfolio__content--turte">
+                                <a href="../websites/turtle_diving_resort/html/index.html" target="_blank">
+                                    <img class="image__turte" src="../images/turtle.webp"
+                                        alt="Vorschau der Turtle Diving Resort Webseite">
+                                </a>
+                            </div>
+                            <div class="websites__content--kavita">
+                                <a href="../websites/kavita__one/index.html" target="_blank">
+                                    <img class="image__kavita" src="../images/kavita.webp"
+                                        alt="Vorschau der Turtle Diving Resort Webseite">
+                                </a>
+                            </div>
                         </div>
-                        <div class="portfolio__content--kavita">
-                            <a href="../websites/kavita__one/index.html" target="_blank">
-                                <img class="image__kavita" src="../images/mockup_kavita.webp"
-                                    alt="Vorschau der Turtle Diving Resort Webseite">
-                            </a>
-                        </div>
-                </div>
                     </div>
 
-                    <div class="portfolio__conten--print">
-                        <h3 class="portfolio__content--headline fs__l fc__neutral--200 ft__semibold">Printmedien</h3>
+                    <div class="portfolio__content--print bg__neutral--200">
+                        <h3 class="print__content--headline fs__l fc__primary ft__semibold">Printmedien</h3>
+                        <div class="content__print">
+                            <div class="print__images--wrapper">
+                                <img class="print__content--image" src="../images/graffiti.webp"
+                                    alt="Graffiti an einer Wand">
+                            </div>
+
+                            <div class="print__images--wrapper">
+                                <img class="print__content--image" src="../images/u50.webp"
+                                    alt=" Ein Flyer, für eine Ü 50 Tanzveranstaltung">
+                            </div>
+
+                            <div class="print__content--wrapper">
+                                <img class="print__content--image" src="../images/sneakers.webp"
+                                    alt="Ein Sneakerplakat für eine Sneakerconvension">
+                            </div>
+                            <div class="print__content--wrapper">
+                                <img class="print__content--image" src="../images/truck.webp"
+                                    alt="Ein Truck mit einem Logo">
+                            </div>
+                        </div>
                     </div>
+                    <a class="btn button__portfolio fs__m" href="kontakt.html">Portfolio</a>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer__content bg__neutral--200">
-            <p class="fs__s fc__neutral--100">© 2026 Kavita</p>
+   <footer class="bg__neutral--200">
+        <div class="footer__content">
+            
+            <div class="footer__content--social margin">
+                <a href="https://facebook.com/aleckznoeletienne"
+                target="_blank">
+                    <img class="social__icons" src="../icons/facebook.png">
+                </a>
+
+                <a href="">
+                    <img class="social__icons" src="../icons/instagram.svg">
+                </a>
+            </div>
+
+            <div class="footer__content--privacy margin">
+                <a href="datenschutz.html#datenschutz">Datenschutz</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
 
         </div>
-    </footer>
+</footer>
 </body>
 
 </html>

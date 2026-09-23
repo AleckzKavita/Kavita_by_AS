@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/laptop.css">
+    <link rel="icon" type="image/svg" href="../favicon/favicon.svg">
+    <script src="../javascript/script.js" defer></script>
+    <title>Kavita</title>
+</head>
+
+<body>
+
+    <div class="head__background bg__neutral--200">
+        <a href="index.html">
+            <img class="logo" src="../logo/Logo_gold.svg" alt="Kavita Logo">
+        </a>
+        <button id="navbar__toggle" class="burger__button" popovertarget="navbar">
+            <img class="burger__icon" src="/icons/burger__icon.svg" alt="menu open">
+        </button>
+    </div>
+<img class="hero__image" src="../images/titelbild.webp" alt="Arbeitsplatz mit Laptop und Notizbuch">
+
+    <header class="header">
+
+        <header class="header">
+
+        <nav id="navbar" class="navbar" popover>
+            <button class="close__button" popovertarget="navbar">
+                <img class="close__icon" src="/icons/close__icon.svg" alt="menu close">
+            </button>
+            <ul class="navbar__list">
+                <li><a href="index.html#home">Startseite</a></li>
+                <li><a href="uebermich.html#uebermich">Über mich</a></li>
+                <li><a href="portfolio.html#portfolio">Portfolio</a></li>
+                <li><a class="current" href="kontakt.html#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="contact__wrapper bg__neutral--200">
+                <div class="margin">
+                    <h2 class="  fs__xxxl">Kontakt</h2>
+                    <div class="contact__content">
+                        <p class="contact__content--text fc__neutral">
+                            Du möchten mehr über mich, oder meinen bisherigen Werdegang erfahren?
+                            Dann freue ich mich über Deine Nachricht und die Möglichkeit, mich persönlich bei Dir
+                            vorzustellen.
+                        </p>
+                        <div class="contact__form--grid">
+                            <div class="form__wrapper">
+                                <form action="https://formspree.io/f/xyezjzyy" method="post" class="contact__form">
+                                    <div class="formfield">
+                                        <label for="agency">Agentur/Firma*</label>
+                                        <input type="text" id="agency" name="agency" placeholder="Agentur für Mediengestaltung" required>
+                                    </div>
+
+                                    <div class="formfield">
+                                        <label for="name">Name*</label>
+                                        <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+                                    </div>
+
+                                    <div class="formfield ">
+                                        <label for="email">E-Mail-Adresse*</label>
+                                        <input type="email" id="email" name="email" placeholder="max@mustermann.de"
+                                            required>
+                                    </div>
+
+                                    <div class="formfield">
+                                        <label for="message">Nachricht</label>
+                                        <textarea id="message" name="message" rows="10"
+                                            placeholder="Deine Nachricht"></textarea>
+                                    </div>
+
+                                    <div class="formfield">
+                                        <p class="contact__privacy">
+                                            Hinweise zur Verarbeitung Deiner Daten findest Du in meiner
+                                            <a class="fc__primary" href="datenschutz.html#datenschutz">Datenschutzerklärung</a>.
+                                        </p>
+                                    </div>
+
+                                    <button type="submit" class="btn fs__m">Senden</button>
+                                </form>
+                            </div>
+
+                            <div class="contact__info">
+                                <a href="../html/index.html#home">
+                                <img class="contact__logo padding" src="../logo/Logo_gold.svg"
+                                    alt="Kavita Logo">
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg__neutral--200">
+        <div class="footer__content">
+            
+            <div class="footer__content--social margin">
+                <a href="">
+                    <img class="social__icons" src="../icons/facebook.png">
+                </a>
+
+                <a href="">
+                    <img class="social__icons" src="../icons/instagram.svg">
+                </a>
+            </div>
+
+            <div class="footer__content--privacy margin">
+                <a href="datenschutz.html#datenschutz">Datenschutz</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
+
+        </div>
+</footer>
+</body>
+
+</html>

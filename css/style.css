@@ -3,6 +3,10 @@ body {
     hyphens: auto;
 }
 
+p {
+    max-width: 65ch;
+}
+
 .head__background {
     display: flex;
     justify-content: space-between;
@@ -21,12 +25,6 @@ body {
     object-position: center;
 }
 
-.header__slogan {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
 .burger__button{
     display: block;
     width: 4rem;
@@ -39,21 +37,22 @@ body {
 .close__button{
     display: block;
     width: 4rem;
-    height: auto;
+    
     border: none;
     background: none;
     margin-left: auto;
     cursor: pointer;
 }
 
-.close__icon{
-
-}
-
 .navbar {
-  position: fixed;
-  top: 11rem;
-  left: 0;
+    position: fixed;
+    left: auto;
+    right: 0;
+    top: 4rem;
+    border: none;
+    border-radius: 0 0 0 2rem;
+    transform: translateX(100%);
+    overflow: hidden;
 }
 
 .navbar__list {
@@ -71,35 +70,45 @@ body {
 .navbar__list a {
     color: black;
     text-decoration: none;
-    font-family: "PoppinsSemiBold", sans-serif;
+    font-family: var(--font__semibold), sans-serif;
     font-size: var(--fs__l);
 }
 
 .navbar:popover-open {
-    border: 0;
-    width: 100%;
+    width: 50%;
     margin: 0;
     padding-block: 1rem;
     background-color: var(--cl__primary);
+
+    transform: translateX(0);
+    animation: navbar__slide-in 0.7s ease forwards;
+}
+
+@keyframes navbar__slide-in {
+
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
 }
 
 
 /* sections */
 
 .wrapper__home { 
-    padding: 1rem 0 2rem 0;
-
+    padding-bottom: 2rem;
     border-top: 0.1rem solid var(--cl__primary);
 }
 
-.uebermich {
-    padding-bottom: 2rem;
-}
 
 .wrapper__uebermich{
     border-top: 1px solid var(--cl__primary);
-    padding: 1rem 0 0 0;
+    padding-bottom: 2rem;
 }
+
 
 .uebermich__images{
     position: relative;
@@ -125,14 +134,17 @@ body {
     opacity: 1;
 }
 
+.wrapper__skills {
+    padding-bottom: 2rem;
+}
 
 .skills__headline {
     padding: 0 1rem;
-    margin-top: 0.5rem;
+    
 }
 
-.hard__skills{
-    margin-bottom: 3rem;
+.hard__skills {
+    margin-bottom: 2rem;
 }
 
 .hard__skills--list, .soft__skills--list {
@@ -152,7 +164,7 @@ body {
     align-items: center;
 
     gap: 1rem;
-    padding: 0.75rem 0;
+    padding: 1rem 0;
 
     border-bottom: 0.1rem solid var(--cl__primary);
 }
@@ -175,47 +187,107 @@ body {
     color: var(--cl__primary);
 }
 
-.soft__skills {
-    margin-bottom: 3rem;
-}
-
-.soft__skills--item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    gap: 1rem;
-    padding: 0.75rem 0;
-
-    border-bottom: 0.1rem solid var(--cl__primary);
-}
-
 .portfolio {
+    border-top: 0.1rem solid var(--cl__primary);
     padding-bottom: 2rem;
 }
 
-.wrapper__portfolio {
-    border-top: 1px solid var(--cl__primary);
-    padding: 2rem 0 0 0;
+.wrapper__portfolio--work {
+    padding-bottom: 2rem;
 }
 
-.portfolio__work {
+.checkbox {
+    display: flex;
+    align-items: start;
     
+    gap: 0.5rem;   
 }
 
-.portfolio__work--content {
-    
+label {
+    font-family: var(--font__accent);
 }
 
-.gap {
+.formfield {
     display: flex;
     flex-direction: column;
-    background-color: var(--cl__neutral);
-
-    gap: 4rem;
+    gap: 0;
 }
 
-.image__kavita, .image__turtle {
+
+
+.contact__wrapper {
+    
+    border-top: 0.1rem solid var(--cl__primary) 
+}
+
+.contact__form {
+    padding-bottom: 2rem;
+}
+
+.contact__info {
+    text-align: center;
+}
+
+.formfield {
+    margin-top: 1rem;
+}
+
+.formfield input, textarea {
+    border: 0.1rem solid var(--cl__primary);
+    
+}
+
+.formfield label {
+    color: var(--cl__primary);
+}
+
+.contact__privacy {
+    color: var(--cl__neutral--100);
+    
+}
+
+.contact__logo {
+    width: 15rem;
+    height: auto;
+}
+
+.social__icons {
+    width: 1rem;
+    height: auto;
+}
+
+/* footer */
+
+.footer__content {
+    justify-content: space-around;
+    padding: 0.5rem;
+    border-top: 0.1rem solid var(--cl__primary)
+}
+
+.footer__content--social {
+    display: grid;
+    
+}
+
+.footer__content--privacy {
+    display: grid;
+    
+}
+
+.footer__content--privacy a {
+    color: var(--cl__primary);
     cursor: pointer;
 }
+
+
+/* privacy */
+
+.privacy__mark {
+    font-family: var(--font__semibold);
+}
+
+.datenschutz {
+    padding-bottom: 5rem;
+}
+
 

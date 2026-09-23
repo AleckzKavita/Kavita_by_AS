@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/laptop.css">
     <link rel="icon" type="image/svg" href="/favicon/favicon.svg">
     <script src="../javascript/script.js" defer></script>
     <title>Kavita</title>
@@ -13,14 +15,16 @@
 
 <body>
 
-    <img class="hero__image" src="../images/titelbild.webp" alt="Arbeitsplatz mit Laptop und Notizbuch">
-
     <div class="head__background bg__neutral--200">
-        <img class="logo" src="../logo/Logo_gold.svg" alt="Kavita Logo">
+        <a href="index.html">
+            <img class="logo" src="../logo/Logo_gold.svg" alt="Kavita Logo">
+        </a>
         <button id="navbar__toggle" class="burger__button" popovertarget="navbar">
             <img class="burger__icon" src="/icons/burger__icon.svg" alt="menu open">
         </button>
     </div>
+
+<img class="hero__image" src="../images/titelbild.webp" alt="Arbeitsplatz mit Laptop und Notizbuch">
 
     <header class="header">
 
@@ -29,17 +33,18 @@
                 <img class="close__icon" src="/icons/close__icon.svg" alt="menu close">
             </button>
             <ul class="navbar__list">
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="uebermich.html">Über mich</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="index.html#home">Startseite</a></li>
+                <li><a class="current" href="uebermich.html#uebermich">Über mich</a></li>
+                <li><a href="portfolio.html#portfolio">Portfolio</a></li>
+                <li><a href="kontakt.html#contact">Kontakt</a></li>
             </ul>
         </nav>
 
     </header>
+
     <main>
-        <section class="uebermich  bg__neutral--200">
-            <div class="wrapper__uebermich ">
+        <section id="uebermich" class="uebermich  bg__neutral--200">
+            <div class="wrapper__uebermich">
                 <h1 class="uebermich__headline fs__xxxl padding">Über mich</h1>
                 <div class="uebermich__images margin">
                     <img class="uebermich__images--print uebermich__images--active" src="../images/ich__print.webp"
@@ -85,7 +90,7 @@
             <section class="skills">
             <div class="wrapper__skills bg__neutral--100">
                 <h2 class="skills__headline fs__xxl fc__neutral--200 bg__primary">Skills</h2>
-                <div class="hard__skills ">
+                <div class="hard__skills">
                     <div class="hard__skills--content margin">
                         <h3 class="hard__skills--headline fs__l fc__neutral--200 ft__semibold">Hard Skills</h3>
                         <ul class="hard__skills--list">
@@ -185,17 +190,32 @@
                             </div>
                         </li>
                     </ul>
-                    <a class="btn fs__l" href="kontakt.html">Portfolio</a>
+                   
                 </div>
+                 <a class="btn skills__button fs__m" href="kontakt.html">Portfolio</a>
             </div>
         </section>
-    </main>
-    <footer>
-        <div class="footer__content bg__neutral--200">
-            <p class="fs__s fc__neutral--100">© 2026 Kavita</p>
 
+    </main>
+
+    <footer class="bg__neutral--200">
+        <div class="footer__content">
+            
+            <div class="footer__content--social margin">
+                <a href="">
+                    <img class="social__icons" src="../icons/facebook.png">
+                </a>
+
+                <a href="">
+                    <img class="social__icons" src="../icons/instagram.svg">
+                </a>
+            </div>
+            <div class="footer__content--privacy margin">
+                <a href="datenschutz.html#datenschutz">Datenschutz</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
         </div>
-    </footer>
+</footer>
 </body>
 
 </html>

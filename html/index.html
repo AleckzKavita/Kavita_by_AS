@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/laptop.css">
     <link rel="icon" type="image/svg" href="/favicon/favicon.svg">
     <script src="../javascript/script.js" defer></script>
     <title>Kavita</title>
@@ -13,14 +15,15 @@
 
 <body>
 
-    <img class="hero__image" src="../images/titelbild.webp" alt="Arbeitsplatz mit Laptop und Notizbuch">
-
     <div class="head__background bg__neutral--200">
-        <img class="logo" src="../logo/Logo_gold.svg" alt="Kavita Logo">
+        <a href="index.html">
+            <img class="logo" src="../logo/Logo_gold.svg" alt="Kavita Logo"></a>
         <button id="navbar__toggle" class="burger__button" popovertarget="navbar">
             <img class="burger__icon" src="/icons/burger__icon.svg" alt="menu open">
         </button>
     </div>
+
+    <img class="hero__image" src="../images/titelbild.webp" alt="Arbeitsplatz mit Laptop und Notizbuch">
 
     <header class="header">
 
@@ -29,33 +32,51 @@
                 <img class="close__icon" src="/icons/close__icon.svg" alt="menu close">
             </button>
             <ul class="navbar__list">
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="uebermich.html">Über mich</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a class="current" href="index.html#home">Startseite</a></li>
+                <li><a href="uebermich.html#uebermich">Über mich</a></li>
+                <li><a href="portfolio.html#portfolio">Portfolio</a></li>
+                <li><a href="kontakt.html#contact">Kontakt</a></li>
             </ul>
         </nav>
 
     </header>
+
     <main>
-        <section class="home">
-        <div class="wrapper__home bg__neutral--200">
-            <div class="home__content margin">
-            <h1 class="home__headline fs__xxxl">Bereit für Neues</h1>
-            <p class="fc__neutral--100 fs__m">
-                Als ausgelernter Mediengestalter Digital und Print bin ich auf der Suche nach einem Arbeitgeber, bei dem
-                ich mein während der Umschulung erworbenes theoretisches Wissen in der Praxis anwenden und vertiefen
-                kann. <br><br>Gleichzeitig möchte ich meine fachlichen Kenntnisse sowie meine praktischen Fähigkeiten
-                kontinuierlich ausbauen und weiterentwickeln.
-            </p>
-            <a class="btn fs__l" href="uebermich.html">Über mich</a>
-        </div>
-        </div>
+        <section id="home" class="home">
+            <div class="wrapper__home bg__neutral--200">
+                <div class="home__content margin">
+                    <h1 class="home__headline fs__xxxl">Bereit für Neues</h1>
+                    <p class="fc__neutral--100 fs__m">
+                        Nach meiner im Juli, erfolgreich abgeschlossenen Umschulung zum Mediengestalter in Digital und Print,
+                        möchte ich nun den Einstieg ins Berufsleben finden und mein erworbenes Wissen in der Praxis
+                        anwenden und vertiefen.
+                    </p>
+                    <p class="fc__neutral--100">
+                        Dabei ist es mir wichtig, meine fachlichen Kenntnisse und praktischen Fähigkeiten kontinuierlich
+                        auszubauen, neue Erfahrungen zu sammeln und mich beruflich weiterzuentwickeln.
+                    </p>
+                    <a class="btn  fs__m" href="uebermich.html">Über mich</a>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <div class="footer__content bg__neutral--200">
-            <p class="fs__s fc__neutral--100">© 2026 Kavita</p>
+    <footer class="bg__neutral--200">
+        <div class="footer__content">
+
+            <div class="footer__content--social margin">
+                <a href="">
+                    <img class="social__icons" src="../icons/facebook.png">
+                </a>
+
+                <a href="">
+                    <img class="social__icons" src="../icons/instagram.svg">
+                </a>
+            </div>
+
+            <div class="footer__content--privacy margin">
+                <a href="datenschutz.html#datenschutz">Datenschutz</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
 
         </div>
     </footer>
