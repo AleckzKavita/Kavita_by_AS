@@ -259,6 +259,7 @@ label {
 /* footer */
 
 .footer__content {
+    display: flex;
     justify-content: space-around;
     padding: 0.5rem;
     border-top: 0.1rem solid var(--cl__primary)
@@ -266,6 +267,7 @@ label {
 
 .footer__content--social {
     display: grid;
+    gap:
     
 }
 
