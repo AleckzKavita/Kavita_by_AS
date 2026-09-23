@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" width="5.35mm" height="4.49mm" viewBox="0 0 15.17 12.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x=".5" y=".5" width="14.17" height="1.74" rx=".87" ry=".87"/>
+  <rect class="cls-1" x=".5" y="5.5" width="14.17" height="1.74" rx=".87" ry=".87"/>
+  <rect class="cls-1" x=".5" y="10.5" width="14.17" height="1.74" rx=".87" ry=".87"/>
+</svg>

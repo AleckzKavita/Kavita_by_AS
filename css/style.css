@@ -3,32 +3,22 @@ body {
     hyphens: auto;
 }
 
-.hero__overlay {
-    
-}
-
-.overlay__headline {
-    font-family: var(--font__accent--100);
+.head__background {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
 }
 
 .logo {
-    width: 4rem;
+    width: 3rem;
     height: auto;
+    margin: 0.5rem 0 0 0.5rem;
 }
 
 .hero__image {
     display:block;
     object-fit: cover;
     object-position: center;
-    border-radius: 0;
-}
-
-.header {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    border-bottom: solid 0.1rem #20183d;
-    border-top: solid 0.1rem #20183d;
 }
 
 .header__slogan {
@@ -37,46 +27,39 @@ body {
     align-items: center; 
 }
 
- 
-
 .burger__button{
     display: block;
-    width: 3rem;
+    width: 4rem;
     height: auto;
     border: none;
     background: none;
     cursor: pointer;
-    margin-left: auto;
 }
 
-.navbar__icon{
-    height: auto;
+.close__button{
     display: block;
-    margin: 0.5rem 0.5rem 0 0;
-    padding: 0.5rem;
-    width: 1.5rem;
+    width: 4rem;
     height: auto;
-    
-    background: transparent;
-    background-color: #003D7Cbb;
-    backdrop-filter: blur(10px);
-    border:#003D7C 1px solid;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px #003D7Cbb;
+    border: none;
+    background: none;
+    margin-left: auto;
+    cursor: pointer;
 }
 
+.close__icon{
 
+}
 
 .navbar {
-  
+  position: fixed;
+  top: 11rem;
+  left: 0;
 }
-
-
 
 .navbar__list {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 
     list-style: none;
     margin: 0;
@@ -88,24 +71,151 @@ body {
 .navbar__list a {
     color: black;
     text-decoration: none;
-    font-family: "PoppinsSemibold";
-    font-size: 1.25rem;
+    font-family: "PoppinsSemiBold", sans-serif;
+    font-size: var(--fs__l);
 }
 
 .navbar:popover-open {
     border: 0;
     width: 100%;
-    bottom: 0;
-    top: auto;
     margin: 0;
     padding-block: 1rem;
-    background-image: linear-gradient(90deg,var(--cl__accent),
-    var(--cl__primary));
+    background-color: var(--cl__primary);
 }
 
-.burger__button {
-   
 
+/* sections */
+
+.wrapper__home { 
+    padding: 1rem 0 2rem 0;
+
+    border-top: 0.1rem solid var(--cl__primary);
+}
+
+.uebermich {
+    padding-bottom: 2rem;
+}
+
+.wrapper__uebermich{
+    border-top: 1px solid var(--cl__primary);
+    padding: 1rem 0 0 0;
+}
+
+.uebermich__images{
+    position: relative;
+    height: auto;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+}
+
+.uebermich__images--digital, 
+.uebermich__images--print{
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.uebermich__images--active{
+    opacity: 1;
+}
+
+
+.skills__headline {
+    padding: 0 1rem;
+    margin-top: 0.5rem;
+}
+
+.hard__skills{
+    margin-bottom: 3rem;
+}
+
+.hard__skills--list, .soft__skills--list {
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
     
+    background-color: var(--cl__neutral);
+}
+
+.hard__skills--item, .soft__skills--item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 0.75rem 0;
+
+    border-bottom: 0.1rem solid var(--cl__primary);
+}
+
+.hard__skills--icon, .soft__skills--icon {
+    width: 2rem;
+    height: auto;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.hard__skills--text, .soft__skills--text {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font__semibold);
+    margin: 0;
+}
+
+.hard__skills--level {
+    color: var(--cl__primary);
+}
+
+.soft__skills {
+    margin-bottom: 3rem;
+}
+
+.soft__skills--item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 0.75rem 0;
+
+    border-bottom: 0.1rem solid var(--cl__primary);
+}
+
+.portfolio {
+    padding-bottom: 2rem;
+}
+
+.wrapper__portfolio {
+    border-top: 1px solid var(--cl__primary);
+    padding: 2rem 0 0 0;
+}
+
+.portfolio__work {
     
 }
+
+.portfolio__work--content {
+    
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cl__neutral);
+
+    gap: 4rem;
+}
+
+.image__kavita, .image__turtle {
+    cursor: pointer;
+}
+

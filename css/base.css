@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "Baby";
-    src: url("../fonts/OoohBaby-Regular.woff2") format("woff2");
+    font-family: "Allura";
+    src: url("../fonts/Allura-Regular.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Comfortaa";
-    src: url("../fonts/Comfortaa-SemiBold.woff2") format("woff2");
+    src: url("../fonts/Comfortaa-VariableFont_wght.woff2") format("woff2");
 }
 
 @font-face {
@@ -15,32 +15,60 @@
 }
 
 @font-face {
+    font-family: "PoppinsReg";
+    src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+}
+
+@font-face {
     font-family: "PoppinsSemiBold";
     src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
 }
 
-
-
+@font-face {
+    font-family: "PoppinsBold";
+    src: url("../fonts/Poppins-Bold.woff2") format("woff2");
+}
 
 
 :root {
     /* Colors */
-    --cl__primary: #28bce5 ;
-    --cl__primary--100: #003d7a;
-    --cl__accent: #E2388A;
-    --cl__neutral: #20183d;
+
+    --cl__primary: #d4af37;
+    --cl__secondary: #5e3abc;
+    --cl__accent: #f2d49a;
+    --cl__neutral: #e6e1e1;
     --cl__neutral--100: #ffffff;
     --cl__neutral--200: #000000;
 
     /* Fonts */
+
     --font__basic: "PoppinsReg", "system-ui", sans-serif;
     --font__med: "PoppinsMed", "system-ui", sans-serif;
-    --font__semi: "PoppinsSemiBold", "system-ui", sans-serif;
+    --font__semibold: "PoppinsSemiBold", "system-ui", sans-serif;
+    --font__bold: "PoppinsBold", "system-ui", sans-serif;
     --font__accent: "Comfortaa", "system-ui", sans-serif;
-    --font__accent--100: "baby", "system-ui", sans-serif;
+    --font__accent--100: "Allura", "system-ui", sans-serif;
 
+    --fs__xxxl: 2.125rem;
+    --lh__xxxl: 1.1;
+
+    --fs__xxl: 1.813rem;
+    --lh__xxl: 1.2;
+
+    --fs__xl: 1.5rem;
+    --lh__xl: 1.3;
+
+    --fs__l: 1.125rem;
+    --lh__l: 1.4;
+
+    --fs__m: 0.875rem;
+    --lh__m: 1.5;
+    
+    --fs__s: 0.625rem;
+    --lh__s: 1.6;
 
     /* animation to keywords */
+
     interpolate-size: allow-keywords;
 }
 
@@ -52,67 +80,55 @@ body {
     font-optical-sizing: auto;
 }
 
+.margin { 
+    margin: 0 1rem;
+}
+
+.padding {
+    padding: 0 1rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 
-    {
-    
-    font-family: var(--font__accent);
+h6 { 
+    font-family: var(--font__accent--100);
     color: var(--cl__primary);
 }
 
 span {
-    font-family: var(--font__med);
+    font-family: var(--font__basic);
     color: var(--cl__primary);
 }
 
+/* font type */
 
-.wrapper {
-    max-inline-size: var(--maxWidth); 
-    max-width: var(--maxWidth);
-    margin-inline: auto; 
-    padding-inline: 1rem;
-    box-sizing: border-box;
+.ft__med {
+    font-family: var(--font__med);
 }
 
-.btn {
-    display: flex;
-    inline-size: fit-content;
-    border-radius: 1rem;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
+.ft__semibold {
+    font-family: var(--font__semibold);
+}
 
-    background-color: var(--cl__accent);
-    color: var(--cl__neutral--200);
+.ft__bold {
     font-family: var(--font__semi);
-
-    padding: 0.5rem 1.5rem;
-    margin: 1rem 0 2rem 0;
-    margin-top: 2rem;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 2rem;
+.ft__accent {
+    font-family: var(--font__accent);
 }
 
-button,
-input,
-textarea,
-select {
-    font: inherit;
-}
-
-html {
-    scroll-behavior: smooth;
+.ft__accent--100 {
+    font-family: var(--font__accent--100);
 }
 
 
+
+
+/* font colors */
 
 .fc__primary {
     color: var(--cl__primary);
@@ -136,7 +152,6 @@ html {
 
 
 /* TypeScale 1.2 */
-
 
 .fs__xxxl {
     font-size: 2.125rem;
@@ -168,12 +183,65 @@ html {
 }
 
 
+.wrapper {
+    max-inline-size: var(--maxWidth); 
+    max-width: var(--maxWidth);
+    margin-inline: auto; 
+    padding-inline: 1rem;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: flex;
+    inline-size: fit-content;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+    background: linear-gradient(90deg, #d4af37, #f2d49a);
+    color: var(--cl__neutral--200);
+    font-family: var(--font__med);
+
+    padding: 0.25rem 2rem;
+    margin-top: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
 
 .bg__neutral {
     background-color: var(--cl__neutral);
+}
+
+.bg__neutral--100 {
+    background-color: var(--cl__neutral--100);
+}
+
+.bg__neutral--200 {
+    background-color: var(--cl__neutral--200);
+}
+
+.bg__primary {
+    background-color: var(--cl__primary);
 }
 
 

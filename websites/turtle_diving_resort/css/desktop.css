@@ -1,0 +1,101 @@
+@media screen and (width > 58rem) {
+    section {
+        max-width: 80rem;
+        margin-inline: auto;
+    }
+
+    .header {
+        background-color: var(--cl__primary--100);
+       padding: 0;
+    }
+
+
+    .logo__white {
+        width: 10rem;
+        height: auto;
+    }
+
+
+
+    .navbar {
+        position: static;
+        inset: auto;
+
+        background: transparent;
+
+        transform: none;
+        transition: none;
+    }
+
+    .navbar__list {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+
+    .navbar__button{
+        display: none;
+    }
+
+    
+
+    .navbar__list li a {
+        font-family: var(--font__accent);
+        color: var(--cl__neutral--100);
+        font-size: 2rem;
+    }
+
+    #navbar {
+        display: flex;
+        border: none;
+        position: static;
+    }
+
+    .navbar__list li a:hover {
+        color: var(--cl__accent);
+    }
+
+
+
+    .video {
+        display: block;
+    }
+
+
+   
+    .map {
+        display: block;
+        margin-inline: auto;
+        
+        max-width: 50rem;
+    }
+
+    
+
+    form {
+        max-width: 30rem;
+    }
+
+    .popup__headline {
+    margin: 0.5rem 0 1.5rem 0;
+    }
+}
+
+.btn:hover {
+    background-color: var(--cl__primary);
+    color: var(--cl__neutral);
+}
+
+.hero__button:hover {
+    background-color: var(--cl__primary);
+    color: var(--cl__neutral);
+}
+
+.button__courses:hover {
+    background-color: var(--cl__neutral--200);
+    color: var(--cl__accent);
+}
+
+.map__button:hover {
+    transform: scale(1.3);
+}

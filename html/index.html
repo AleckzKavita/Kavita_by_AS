@@ -6,41 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/svg" href="../favicon/favicon.svg">
+    <link rel="icon" type="image/svg" href="/favicon/favicon.svg">
+    <script src="../javascript/script.js" defer></script>
     <title>Kavita</title>
 </head>
 
 <body>
-    <img class="hero__image" src="../images/titelbild.webp" alt="Arbeitsplatz mit Laptop, Kaffeetasse und Notizbuch">
+
+    <img class="hero__image" src="../images/titelbild.webp" alt="Arbeitsplatz mit Laptop und Notizbuch">
+
+    <div class="head__background bg__neutral--200">
+        <img class="logo" src="../logo/Logo_gold.svg" alt="Kavita Logo">
+        <button id="navbar__toggle" class="burger__button" popovertarget="navbar">
+            <img class="burger__icon" src="/icons/burger__icon.svg" alt="menu open">
+        </button>
+    </div>
 
     <header class="header">
-        <img class="logo" src="/logo/logo_kavita.svg" alt="Kavita Logo">
-
-        <span class="header__slogan fc__neutral fs__s">
-            Mediengestalter<br>
-            <span class="overlay__headline fc__accent fs__m">Digital & Print</span>
-        </span>
 
         <nav id="navbar" class="navbar" popover>
-            <button class="burger__button" popovertarget="navbar">
-                <img class="burger__icon" src="/icons/close__icon.svg" alt="menu close">
+            <button class="close__button" popovertarget="navbar">
+                <img class="close__icon" src="/icons/close__icon.svg" alt="menu close">
             </button>
             <ul class="navbar__list">
-                <li>Startseite</li>
-                <li>Über mich</li>
-                <li>Portfolio</li>
-                <li>Kontakt</li>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="uebermich.html">Über mich</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
 
-        <button id="navbar__toggle" class="burger__button" popovertarget="navbar">
-            <img  class="burger__button" src="/icons/burger__icon.svg" alt="menu open" >
-        </button>
     </header>
     <main>
-        
+        <section class="home">
+        <div class="wrapper__home bg__neutral--200">
+            <div class="home__content margin">
+            <h1 class="home__headline fs__xxxl">Bereit für Neues</h1>
+            <p class="fc__neutral--100 fs__m">
+                Als ausgelernter Mediengestalter Digital und Print bin ich auf der Suche nach einem Arbeitgeber, bei dem
+                ich mein während der Umschulung erworbenes theoretisches Wissen in der Praxis anwenden und vertiefen
+                kann. <br><br>Gleichzeitig möchte ich meine fachlichen Kenntnisse sowie meine praktischen Fähigkeiten
+                kontinuierlich ausbauen und weiterentwickeln.
+            </p>
+            <a class="btn fs__l" href="uebermich.html">Über mich</a>
+        </div>
+        </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer__content bg__neutral--200">
+            <p class="fs__s fc__neutral--100">© 2026 Kavita</p>
+
+        </div>
+    </footer>
 </body>
 
 </html>

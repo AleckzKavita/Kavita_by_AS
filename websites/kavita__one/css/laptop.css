@@ -1,0 +1,104 @@
+@media (min-width: 64rem) {
+    section {
+        margin: auto;
+        padding: 1rem 3rem 4rem 3rem;
+    }
+
+    .flowtext {
+        font-size: 1.2rem;
+    }
+
+    .menu_header {
+        width: auto;
+        height: auto;
+    }
+
+    .menu_header label {
+        display: none;
+    }
+
+    .header_content {
+        display: flex;
+
+        padding: 2rem;
+    }
+    .mainnav__link {
+        background-color: #20183d;
+    }
+    .mainnav {
+        transform: translateX(0);
+        position: static;
+        display: flex;
+        flex-direction: row;
+
+        gap: 0.2rem;
+
+        border: none;
+    }
+
+    .mainnav .mainnav__link {
+        font-size: 2rem;
+    }
+
+    .mainnav__item--current .mainnav__link {
+        background-color: #cf3481;
+
+        border-radius: 4rem 1.5rem 4rem 1.5rem;
+    }
+
+    .meimage {
+        width: 100%;
+    }
+
+    .styledlist__text {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .galery__images {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+    }
+
+    .form__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 2rem;
+    }
+
+    .formbutton {
+        float: right;
+        padding: 0.5rem 3rem;
+    }
+
+    .mainnav__link:active {
+        color: black;
+    }
+
+    .mainnav__link:hover {
+        background-color: #972a6b;
+        border-radius: 1.5rem 4rem 1.5rem 4rem;
+    }
+
+    button:hover {
+        color: #20183d;
+    }
+
+    button:active {
+        background-color: #20183d;
+        color: white;
+    }
+}

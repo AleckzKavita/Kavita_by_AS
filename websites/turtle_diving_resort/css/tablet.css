@@ -1,0 +1,152 @@
+@media screen and (width > 40rem) {
+
+    p {
+        max-width: 60ch;
+    }
+
+    .margin {
+        margin: 2rem;
+    }
+
+    .padding {
+        padding-inline: 2rem;
+    }
+
+
+/* sections */
+
+
+    .hero__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+    }
+
+    .hero__text {
+        margin-inline: auto;
+    }
+
+
+    .highlight__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        order: -1;
+    }
+
+    .hurtle__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        align-items: center;
+        gap:  5rem;
+    }
+
+    .hurtle__content--reverse p {
+        order: -1
+    }
+
+    .map {
+        position: relative;
+    }
+
+    .map__buttons {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .map__button {
+        position: absolute;  
+    }
+
+    .map__button span {
+        color: var(--cl__neutral--100);
+    }
+
+    .map__button:nth-of-type(1) {
+        top: 2%;
+        left: 32%;
+    }
+
+    .map__button:nth-of-type(2) {
+        top: 17%;
+        left: 28%;
+    }
+
+    .map__button:nth-of-type(3) {
+        top: 50%;
+        left: 1%;
+    }
+
+    .map__button:nth-of-type(4) {
+        top: 71%;
+        left: 3%;
+    }
+
+    .map__button:nth-of-type(5) {
+        top: 27%;
+        left: 55%;
+    }
+
+
+     .courses__add--direction {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .wrapper__about--content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 5rem;
+    }
+
+    .about__content--reverse img {
+        order: -1;
+    }
+
+    .about__content--text {
+        margin: 0;
+    }
+
+    form {
+        max-width: 20rem;
+        margin-inline: auto;
+        align-self: start;
+    }
+
+    @media screen and (width > 40rem) {
+        .contact__form--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    }
+
+    
+
+    .contact__info {
+        align-self: center;   
+    }
+
+    .logo__blue {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+
+    /* footer */
+
+
+    .footer__content--wrapper {
+        justify-content: space-around;
+    }
+
+    .footer__links a {
+        color: var(--cl__neutral--100);
+    }
+
+}

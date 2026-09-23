@@ -1,0 +1,396 @@
+@font-face {
+    font-family: "sedgwick ave";
+    src: url(../fonts/SedgwickAve-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/Montserrat-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/Montserrat-Bold.woff2) format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/Montserrat-ExtraBold.woff2);
+    font-weight: 800;
+}
+
+html {
+    font-size: 0.938em;
+}
+
+body {
+    margin: 0;
+    font-family: "montserrat";
+    hyphens: auto;
+}
+
+.page_titel {
+    line-height: 120%;
+}
+
+section {
+    max-width: 75rem;
+    padding: 0rem 1rem 4rem 1rem;
+}
+
+/* header/ navigation */
+
+header {
+    background-color: #20183d;
+    font-size: 1rem;
+}
+
+.logo_head {
+    width: 5rem;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #cf3481;
+}
+
+.mainnav {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    /* padding: 1.5rem; */
+    gap: 3.1rem;
+
+    background-color: RGB(32, 24, 61, 0.9);
+
+    transition: transform 1s;
+    transform: translateX(100%);
+    border-top: 2px solid #cf3481;
+    border-left: 2px solid #cf3481;
+    border-bottom: 2px solid #cf3481;
+}
+
+.mainnav__link {
+    text-decoration: none;
+    font-family: "sedgwick ave";
+    font-size: 1.5rem;
+    padding: 2.5rem 1rem 2.5rem 1rem;
+    color: white;
+}
+
+#burger_toggle {
+    display: none;
+}
+
+#burger_toggle:checked ~ ul {
+    transform: translateX(0%);
+}
+
+.menu_header {
+    width: 4.2rem;
+    height: 3.2rem;
+}
+
+.menu_header label {
+    position: fixed;
+    z-index: 20;
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.burger_icon {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border: 1px solid #cf3481;
+    border-radius: 50%;
+    padding: 0.6rem;
+    box-sizing: border-box;
+}
+
+/* section home */
+
+.videobox {
+    background-color: #eee;
+    padding-bottom: 1.5rem;
+    box-shadow: 0rem 1rem 1rem #cf3481;
+}
+
+.introvid {
+    margin: auto;
+    width: 95%;
+    height: auto;
+    padding-top: 2rem;
+}
+
+.meimage {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+    border: 2px solid #cf3481;
+    margin: auto;
+}
+
+/* sections about me */
+
+.page_titel {
+    font-weight: 800;
+    font-size: 2.448rem;
+    color: #20183d;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    text-shadow: 0.2rem 0.1rem 0.3rem #cf3481;
+}
+
+.columnlayout {
+    display: grid;
+    gap: 2rem;
+}
+
+.flowtext {
+    color: #620183;
+}
+
+.flowtext p + * {
+    margin-top: 1rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.description__title {
+    font-weight: 800;
+    font-size: 2.448rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: #20183d;
+    text-shadow: 0.1rem 0.1rem 0.3rem #cf3481;
+}
+
+.description__sectiontitel {
+    font-weight: 800;
+    font-size: 2.074rem;
+    color: #20183d;
+    line-height: 100%;
+    padding-bottom: 1rem;
+}
+
+.styledlist {
+    display: grid;
+    list-style: none;
+    padding-left: 0;
+}
+
+.styledlist__item {
+    font-weight: bold;
+    background-color: #eee;
+    border-top: 1px solid #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.styledlist__icon {
+    width: 1.5rem;
+    height: auto;
+}
+
+.styledlist__text {
+    font-weight: 700;
+}
+
+.resume {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.resume__sectiontitle {
+    font-weight: 800;
+    font-size: 2.074rem;
+    color: #20183d;
+    line-height: 100%;
+    padding-bottom: 1rem;
+}
+
+.resume__itemwrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.resume__item {
+    background-color: #eee;
+    padding: 0.5rem 1rem;
+    border-top: 2px solid #cf3481;
+    padding-top: 0.75rem;
+}
+
+.resume__itemtitle {
+    font-weight: 700;
+    font-size: 1.279rem;
+    color: #cf3481;
+}
+
+.resume__itemdescription {
+    font-size: 1rem;
+}
+
+/* section portfolio */
+
+.gallery__items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    background-color: #eee;
+    border: 1px solid #cf3481;
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+
+.gallery__images {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.5rem 1rem #cf3481;
+}
+
+.gallery__text {
+    display: block;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+/* section contact */
+
+.contact_wrapper {
+    padding-bottom: 5rem;
+}
+
+.form__image {
+    width: 100%;
+    height: auto;
+}
+
+.form_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_wrapper input + label {
+    margin-top: 2rem;
+}
+
+input {
+    height: 2.5rem;
+}
+
+.formbutton {
+    display: flex;
+    float: right;
+    margin: 2rem 0;
+    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+
+    font-family: "sedgwick ave";
+    background-color: #cf3481;
+    border-color: #20183d;
+    border-radius: 1.5rem 0.8rem 1.5rem 0.8rem;
+    color: white;
+}
+
+.text__sent {
+    text-align: center;
+    padding: 2rem;
+    background-color: #eee;
+    color: green;
+    font-weight: 700;
+    border: 2px solid #cf3481;
+}
+
+/* footer */
+
+.footer__wrapper {
+    background-color: #20183d;
+    border-top: 3px solid #cf3481;
+    padding: 1rem;
+}
+
+.footer__wrapperinner {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__legal {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.legaltext__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socialmedia {
+    text-align: center;
+    padding: 0;
+}
+
+.socialmedia__item {
+    list-style: none;
+}
+
+.socialmedia__link {
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 0.25rem;
+    color: #fff;
+}
+
+.socialmedia__icon {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.footer__copyright {
+    color: #fff;
+    text-align: center;
+}
+
+.mainnav__link:active {
+    color: #cf3481;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
