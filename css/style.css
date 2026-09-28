@@ -272,11 +272,12 @@ label {
 
 .footer__content--social {
     display: grid;
+    gap: 0.2rem;
 }
 
 .footer__content--privacy {
     display: grid;
-    
+    gap: 0.2rem;
 }
 
 .footer__content--privacy a {
