@@ -22,6 +22,8 @@ p {
     display:block;
     object-fit: cover;
     object-position: center;
+
+    width: 100%
 }
 
 .burger__button{
