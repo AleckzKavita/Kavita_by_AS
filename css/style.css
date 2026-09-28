@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     hyphens: auto;
 }
 
@@ -190,6 +189,10 @@ p {
 .portfolio {
     border-top: 0.1rem solid var(--cl__primary);
     padding-bottom: 2rem;
+}
+
+.skills__button {
+    margin-left: 1rem;
 }
 
 .wrapper__portfolio--work {

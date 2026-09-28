@@ -43,9 +43,6 @@
     .navbar__list {
         display: flex;
         flex-direction: row;
-        
-        
-
         gap: 3rem;
         margin: 0;
         padding: 1rem;
@@ -78,7 +75,11 @@
 
 
     .portfolio__work img {
-    transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
+    }
+
+    .skills__button {
+        margin-left: 2rem;
     }
 
     .contact__logo {
