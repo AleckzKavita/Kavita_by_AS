@@ -1,6 +1,6 @@
 @media screen and (width > 60rem) {
 
-    section {
+    section, footer{
         max-width: 80rem;
         margin-inline: auto;
     }
@@ -93,6 +93,7 @@
     .footer__content {
         padding: 2rem;
     }
+
 
     .print__content--image:hover {
         transform: scale(1.5);
