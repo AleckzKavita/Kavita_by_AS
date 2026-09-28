@@ -52,13 +52,12 @@
         font-family: var(--font__accent);
         color: var(--cl__neutral--200);
         font-size: var(--fs__xl);
+        font-weight: 800;
     }
 
     .navbar__list li a:hover {
         color: var(--cl__neutral--100);
     }
-
-    
 
     .navbar__list a.current {
         background-color: var(--cl__neutral--200);
