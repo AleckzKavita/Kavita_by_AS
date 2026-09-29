@@ -281,23 +281,18 @@ label {
 }
 
 .footer__content--privacy a {
-    color: var(--cl__primary);
+    color: var(--cl__neutral--100);
     cursor: pointer;
 }
 
-
-/* privacy */
+.privacy__mark {
+    font-family: var(--font__semibold);
+}
 
 .privacy__mark {
     font-family: var(--font__semibold);
 }
 
-.datenschutz {
-    padding-bottom: 5rem;
-}
 
-.privacy__mark {
-    font-family: var(--font__semibold);
-}
 
 
