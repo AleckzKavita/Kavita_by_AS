@@ -285,6 +285,10 @@ label {
     cursor: pointer;
 }
 
+.footer__content--privacy a:active {
+    color: var(--cl__primary);
+}
+
 .privacy__mark {
     font-family: var(--font__semibold);
 }
