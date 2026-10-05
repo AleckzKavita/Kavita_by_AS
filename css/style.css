@@ -144,6 +144,11 @@ p {
     border-bottom: 0.1rem solid var(--cl__primary);
 }
 
+.resume__itemdescription:last-child {
+    border-bottom: none;
+    padding-bottom: 1rem;
+}
+
 .resume__itemdescription p {
     margin-top: 0;
 }
@@ -151,6 +156,8 @@ p {
 .wrapper__skills {
     padding-bottom: 2rem;
 }
+
+
 
 .skills__headline {
     padding: 0 1rem;
@@ -182,6 +189,11 @@ p {
 
     border-bottom: 0.1rem solid var(--cl__primary);
 }
+
+    .hard__skills--list:last-of-type .hard__skills--item,
+    .soft__skills--list:last-of-type .soft__skills--item {
+        border-bottom: none;
+    }
 
 .hard__skills--icon, .soft__skills--icon {
     width: 2rem;
