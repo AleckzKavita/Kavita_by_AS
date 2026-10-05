@@ -10,9 +10,7 @@
         grid-column: 1 / -1;
     }
 
-    .uebermich__content--text:first-child {
-        margin-top: 0;
-    }
+    
 
     .wrapper__skills {
         display: grid;
@@ -52,6 +50,7 @@
         gap: 1rem;
         padding: 1rem 0;
     }
+
 
     .portfolio__work__content {
         display: grid;
