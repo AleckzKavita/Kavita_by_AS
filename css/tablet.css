@@ -53,8 +53,6 @@
         padding: 1rem 0;
     }
 
-    
-
     .portfolio__work__content {
         display: grid;
         grid-template-columns: 1fr 1fr;

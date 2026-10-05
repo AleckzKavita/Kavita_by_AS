@@ -135,6 +135,19 @@ p {
     opacity: 1;
 }
 
+.resume__itemtitle {
+    font-family: var(--font__med);
+    margin-bottom: 0;
+}
+
+.resume__itemdescription {
+    border-bottom: 0.1rem solid var(--cl__primary);
+}
+
+.resume__itemdescription p {
+    margin-top: 0;
+}
+
 .wrapper__skills {
     padding-bottom: 2rem;
 }
