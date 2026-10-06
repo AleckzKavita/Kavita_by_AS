@@ -73,9 +73,7 @@
     }
 
 
-    .portfolio__work img {
-        transition: transform 0.3s ease;
-    }
+    
 
     .skills__button {
         margin-left: 2rem;
@@ -97,9 +95,7 @@
 
 /* hover */
 
-    .print__content--image:hover {
-        transform: scale(1.5);
-    }
+    
 
     .btn:hover {
         color: var(--cl__neutral--100);
