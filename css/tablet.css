@@ -10,8 +10,6 @@
         grid-column: 1 / -1;
     }
 
-    
-
     .wrapper__skills {
         display: grid;
         grid-template-columns: 1fr 1fr;
