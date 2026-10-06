@@ -21,7 +21,8 @@
         height: 8rem;
     }
 
-    
+    /* navigation */
+
     #navbar {
         display: flex;
         justify-content: space-around;
@@ -66,18 +67,28 @@
         border-radius: 1rem;
     }
 
+    /* sections */
+
+    /* about me */
+
     .wrapper__uebermich {
         display: grid;
         grid-template-columns: 1fr 2fr;
         align-items: start;
     }
 
-
-    
-
     .skills__button {
         margin-left: 2rem;
     }
+
+    .image__hint {
+        width: 2rem;
+        height: 2rem;
+        bottom: 2rem;
+        
+    }
+
+    /* contact */   
 
     .contact__logo {
         width: 25rem;
@@ -93,7 +104,7 @@
         cursor: pointer;
     }
 
-/* hover */
+    /* hover */
 
     
 
@@ -101,6 +112,11 @@
         color: var(--cl__neutral--100);
         background: var(--cl__neutral--200);
         border: 0.1rem solid var(--cl__primary);
+    }
+
+    .image__hint:hover {
+        background-color: var(--cl__neutral--200);
+        color: var(--cl__primary);
     }
 
     .footer__content--privacy a:hover {

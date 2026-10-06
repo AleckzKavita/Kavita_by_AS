@@ -45,6 +45,8 @@ p {
     cursor: pointer;
 }
 
+/* navigation */
+
 .navbar {
     position: fixed;
     left: auto;
@@ -99,11 +101,14 @@ p {
 
 /* sections */
 
+/* home */
+
 .wrapper__home { 
     padding-bottom: 2rem;
     border-top: 0.1rem solid var(--cl__primary);
 }
 
+/* about me */
 
 .wrapper__uebermich{
     border-top: 1px solid var(--cl__primary);
@@ -211,6 +216,8 @@ p {
     color: var(--cl__primary);
 }
 
+/* portfolio */
+
 .portfolio {
     border-top: 0.1rem solid var(--cl__primary);
     padding-bottom: 2rem;
@@ -223,6 +230,45 @@ p {
 .wrapper__portfolio--work {
     padding-bottom: 2rem;
 }
+
+.portfolio__content--turtle a,
+.websites__content--kavita a {
+    position: relative;
+    display: block;
+}
+
+.image__turtle {
+    display: block;
+    width: 100%;
+}
+
+.image__hint {
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    background-color: var(--cl__primary);
+    color: black;
+
+    border-radius: 50%;
+
+    font-size: 1.5rem;
+    line-height: 1;
+
+    z-index: 10;
+}
+
+/* contact */
 
 .checkbox {
     display: flex;
@@ -240,8 +286,6 @@ label {
     flex-direction: column;
     gap: 0;
 }
-
-
 
 .contact__wrapper {
     
@@ -322,6 +366,20 @@ label {
 
 
 
+
+.print__images--wrapper {
+    position: relative;
+}
+
+.print__images--wrapper a {
+    display: block;
+    position: relative;
+}
+
+.print__images--wrapper img {
+    display: block;
+    width: 100%;
+}
 
 
 

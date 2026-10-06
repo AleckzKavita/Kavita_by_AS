@@ -1,5 +1,7 @@
 @media screen and (width > 40rem) {
 
+    /*about me*/
+
     .wrapper__uebermich {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -49,6 +51,7 @@
         padding: 1rem 0;
     }
 
+    /* portfolio */
 
     .portfolio__work__content {
         display: grid;
@@ -74,12 +77,15 @@
     
     }
 
+    /* contact */
+
     .contact__info {
         display: flex;
         justify-content: center;
         align-items: center;
-    
     }
+
+    /* footer */
 
     .footer__content {
         display: flex;
